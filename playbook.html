@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <center>
+            <hr size="3" noshade>
+            <h1> This is my HTML Playbook </h1>
+        </center>
+    </header>
+    <div>
+        <hr size="3" noshade>
+        <h2>Introduction to HTML:</h2>
+        <p>
+            <strong>HTML</strong> stands for <strong>Hypertext Markup language</strong>.
+            <br><br>
+            <strong>Hypertext</strong> refers to the pieces of text which can link to other documents in the website.
+            These pieces of text are hypertext or hyperlinks, and they are the foundation of an HTML website.
+            <br><br>
+            <strong>Markup</strong> is done through <strong>HTML tags</strong>.
+            <br>
+        </p>
+        <div>
+            <hr>
+            <strong>Documentation websites:</strong>
+            <button><a href="https://www.w3schools.com/html/default.asp">W3Schools</a></button>
+            <button><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN</a></button>
+            <button><a href="https://devdocs.io/html/">DevDocs.io</a></button>
+            <br><br>
+            <strong>Helpful Websites:</strong>
+            <button><a href="https://stackoverflow.com/">StackOverflow</a></button>
+            <br>
+            <p>
+                The <strong>'Tag omission'</strong> section of devdocs.io shows whether we need start and end tags, or
+                if the tag is self-closing.
+                <br>
+                In <strong>chrome</strong>, you can right click on any element and select 'inspect' from the drop down
+                menu in order to look at the HTML and CSS code that the browser is rendering in the background.
+            </p>
+            <hr>
+            <br>
+        </div>
+    </div>
+    <div>
+        <h2>Anatomy of an HTML tag:</h2>
+        <p>
+            The first part of an <strong>HTML tag</strong> is called the <strong>HTML element</strong>, the second part
+            is called an <strong>HTML attribute</strong>.
+            <br><br>
+            An <strong>HTML attribute</strong> gives more information to the browser to specify modifications to an
+            <strong>HTML element</strong>.
+            The <strong>HTML attribute</strong> comes after the main <strong>HTML element</strong> and is separated from
+            the element by a single space.
+        </p>
+        <hr>
+        <p>
+            <strong>&lt;hr&gt;</strong> = horizontal rule tags. This will allow us to create horizontal lines. It's
+            self-closing and measured by 'pixels high'. <strong>Example: &lt;hr size="3"&gt;</strong> means the hr
+            element has an attribute of size="3" pixels high.
+            <!-- To show < and > within the html browser without calling an element: use &lt; for < and &gt; for > in your code-->
+        </p>
+    </div>
+    <div>
+        <hr>
+        <br>
+        <h2>What is the HTML Boilerplate?</h2>
+        <p>
+            <strong>Boilerplate:</strong> what you start off with when you create any new HTML file. Includes a
+            <strong>&lt;!DOCTYPE&gt;</strong> declaration, the
+            <strong>&lt;html&gt;</strong>,<strong>&lt;head&gt;</strong>,<strong>&lt;meta&gt;</strong>,<strong>&lt;title&gt;</strong>,<strong>&lt;/title&gt;</strong>,<strong>*&lt;/head&gt;</strong>,<strong>&lt;body&gt;</strong>,<strong>&lt;/body&gt;</strong>,<strong>&lt;/html&gt;</strong>
+            elements. <strong>*</strong>There are more elements which will be added to the <strong>&lt;head&gt;</strong>
+            <strong>&lt;/head&gt;</strong> section later.
+            <br><br>
+            <strong>&lt;head&gt;</strong> element is an area where important information about our website will be
+            placed, but won't be displayed to the user. It includes things that will help the website render in the
+            browser correctly. <strong>&lt;head&gt;</strong> requires <strong>&lt;/head&gt;</strong>.
+            <br><br>
+            <strong>&lt;meta&gt;</strong> is a tag for the character set encoding of the website. This ensures that the
+            characters that you're using on your website get displayed correctly. The charset="UTF-8" attribute is one
+            of the most common character sets, and we can use it as our default. <strong>&lt;meta&gt;</strong> is
+            self-closing.
+            <br><br>
+            <strong>&lt;title&gt;</strong> is what gets displayed in the tab bar of your browser and should be included
+            in the <strong>&lt;head&gt;</strong> section of your website. <strong>&lt;title&gt;</strong> requires a
+            <strong>&lt;/title&gt;</strong>.
+            <br><br>
+            <strong>&lt;body&gt;</strong> is where all the content of the website goes. <strong>&lt;body&gt;</strong>
+            eventually closes with <strong>&lt;/body&gt;</strong>.
+        </p>
+        <p>
+            <strong>Nesting</strong> and <strong>Indentation</strong> are very important in coding. Think of the
+            indentations as elements being sandwiched between two other elements (ex: opening and closing head tags, or
+            body tags, or even the HTML tags themselves).
+        </p>
+        <hr>
+        <p>
+            <strong>To create a boilerplate in VS Code you can use a *shortcut:</strong> Type an !, hit enter on the
+            first selection and it will automatically insert the boilerplate.
+            <br>
+            *This only works if you have created a .html website.
+            <br>
+            -----------
+            <br>
+            To keep our code clean we can delete the
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"> as Internet Explorer is no longer in use.
+            <br>
+            -----------
+            <br>
+            <strong>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</strong> tells us the
+            viewport and defines how the website should be displayed relative to the screen it's being rendered on, and
+            how the viewport should display your website when it first opens.
+        </p>
+        <hr>
+        <br>
+    </div>
+    <div>
+        <h2>HTML Links and Anchors</h2>
+        <p>
+            <strong>&lt;a href&gt;</strong> includes an 'a' element with a 'hyperlink reference' (known as
+            <strong>href</strong>) attribute. The <strong>href</strong> will then contain a link destination - a URL or
+            a URL
+            fragment that the hyperlink points to. Before the 'a' tag gets closed it includes 'link text' which, when
+            clicked, will take you to another website.
+        </p>
+        <hr>
+        <br>
+    </div>
+    <div>
+        <h2>Tables</h2>
+        <table cellspacing="10"> <!-- Table element with cellspacing attribute of 10 pixels-->
+            <thead><!-- Table head element-->
+                <th>Table header data 1</th><!--Table head data-->
+                <th>Table header data 2</th>
+            </thead>
+            <tbody><!--Table body element-->
+                <tr><!--Table row element-->
+                    <td>table row 1 data column 1</td> <!--Table data element-->
+                    <td>table row 1 data column 2</td>
+                </tr>
+                <tr>
+                    <td>table row 2 data column 1</td>
+                    <td>table row 2 data column 2</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table cellspacing="10">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>HTML</td>
+                            <td>⭐️⭐️⭐️</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>⭐️⭐️</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>Cooking</td>
+                            <td>⭐️⭐️⭐️⭐️</td>
+                        </tr>
+                        <tr>
+                            <td>Baking</td>
+                            <td>⭐️⭐️⭐️</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <br>
+    </div>
+    <div>
+        <h2>Emoji shortcuts</h2>
+        <p><strong>On Mac:</strong>
+            <br>Command + Control + Space
+            <br>This is the default shortcut to bring up the emoji keyboard. If this doesn't work, you might have a
+            different key binding. In that case, go to <strong>Edit</strong> in the top menu bar and click on
+            <strong>Emoji & Symbols</strong>.
+        </p>
+        <hr>
+        <br>
+    </div>
+    <div>
+        <h2>HTML Forms</h2>
+        <form class="" action="" method="">
+            <label type="text">Button:</label>
+            <input type="button">
+            <br>
+            <label type="text">Checkbox:</label>
+            <input type="checkbox">
+            <br>
+            <label type="text">Color:</label>
+            <input type="color">
+            <br>
+            <label type="text">Date:</label>
+            <input type="date">
+            <br>
+            <label type="text">Datetime-local:</label>
+            <input type="datetime-local">
+            <br>
+            <label type="text">Email:</label>
+            <input type="email">
+            <br>
+            <label type="text">File:</label>
+            <input type="file">
+            <br>
+            <label type="text">Hidden:</label>
+            <input type="hidden">
+            <br>
+            <label type="text">Image:</label>
+            <input type="image"
+                src="https://image.spreadshirtmedia.com/image-server/v1/mp/products/T1459A839PA3861PT28D1039220080W8000H10000/views/1,width=800,height=800,appearanceId=839,backgroundColor=F2F2F2/willy-squishmallow-sticker.jpg"
+                height="25">
+            <br>
+            <label type="text">Month:</label>
+            <input type="month">
+            <br>
+            <label type="text">Number:</label>
+            <input type="number">
+            <br>
+            <label type="text">Password:</label>
+            <input type="password">ß
+            <br>
+            <label type="text">Radio:</label>
+            <input type="radio">
+            <br>
+            <label type="text">Range:</label>
+            <input type="range">
+            <br>
+            <label type="text">Reset:</label>
+            <input type="reset">
+            <br>
+            <label type="text">Search:</label>
+            <input type="search">
+            <br>
+            <label type="text">Submit:</label>
+            <input type="submit">
+            <br>
+            <label type="text">Tel:</label>
+            <input type="tel">
+            <br>
+            <label type="text">Text:</label>
+            <input type="text">
+            <br>
+            <label type="text">Time:</label>
+            <input type="time">
+            <br>
+            <label type="text">URL:</label>
+            <input type="url">
+        </form>
+        <hr>
+        <br>
+    </div>
+
+    <!-- These are my comments -->
+    <!-- To show < and > within the html browser without calling an element: use &lt; for < and &gt; for > in your code-->
+    <!-- To run the 'Formatting' extension in VSCode, use SHIFT + Option + 'F' -->
+    <!-- Current StackOverflow is SimplyKate and old password -->
+    <!-- To wrap text in VSCode, use OPTION + 'Z' -->
+    <!-- To quickly switch between apps on MAC, use COMMAND + TAB and then arrow keys -->
+</body>
+
+</html>
